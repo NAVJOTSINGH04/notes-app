@@ -72,12 +72,17 @@
             <label for="loginpassword" class="sr-only">password:</label>
             <input class="form-control" type="password" name="loginpassword" id="loginpassword" placeholder=" password" maxlength="30">
           </div>
-           
+           <div class="checkbox">
+          <label>
+               <input type="checkbox" name="rememberme" id="rememberme">Remember me
+                </label>
+          <a class="pull-right" style="cursor:pointer" data-dismiss="modal" data-target="#forgotpasswordModal" data-toggle="modal"> Forgot Password ?</a>
+          </div>
           </div>
       <div class="modal-footer">
           <input class="btn brown" name="signup" type="submit" value="Login">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-        
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal" data-target="signupModal" data-toggle="modal">Register</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -127,6 +132,36 @@
      
       </form>
       
+<!-- forgot password form     -->
+      <form method="get" id="forgotpasswordform">
+     <div class="modal" id="forgotpasswordModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     < div class="modal-dialog" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+       <h4 class="modal-title">Forgot password? Enter you email address:</h4>
+      </div>
+      <div class="modal-body">
+<!--          forgot password message from php file-->
+          <div id="forgotpasswordmessage"></div>
+       
+           <div class="form-group">
+            <label for="forgotemail" class="sr-only">email:</label>
+            <input class="form-control" type="email" name="forgotemail" id="forgotemail" placeholder="Forgot email" maxlength="50">
+          </div>
+           
+           
+          </div>
+      <div class="modal-footer">
+          <input class="btn brown" name="forgotpassword" type="submit" value="Submit">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal" data-target="signupModal" data-toggle="modal">Register</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+     
+      </form>
       
       
       
