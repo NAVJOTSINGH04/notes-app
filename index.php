@@ -38,7 +38,7 @@
         </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Login</a></li>
+        <li><a href="#loginModal" data-toggle="modal">Login</a></li>
       
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -49,8 +49,100 @@
   <h1>Online Notes App</h1>
   <p>your Notes with you wherever you go.</p>
           <p>Easy to use, protects all your notes!</p>
-  <p><a class="btn btn-primary btn-lg brown signup" href="#" role="button">Sign-up, Its-free</a></p>
+  <p><a class="btn  btn-lg brown signup" href="#" role="button" data-target="#signupModal" data-toggle="modal" >Sign-up, Its-free</a></p>
 </div>
+<!--  login form    -->
+      <form method="get" id="loginform">
+     <div class="modal" id="loginModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     < div class="modal-dialog" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Login:</h4>
+      </div>
+      <div class="modal-body">
+<!--          login message from php file-->
+          <div id="loginmessage"></div>
+       
+           <div class="form-group">
+            <label for="loginemail" class="sr-only">email:</label>
+            <input class="form-control" type="email" name="loginemail" id="loginemail" placeholder="Email" maxlength="50">
+          </div>
+           <div class="form-group">
+            <label for="loginpassword" class="sr-only">password:</label>
+            <input class="form-control" type="password" name="loginpassword" id="loginpassword" placeholder=" password" maxlength="30">
+          </div>
+           
+          </div>
+      <div class="modal-footer">
+          <input class="btn brown" name="signup" type="submit" value="Login">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+     
+      </form>
+      
+      
+<!--      sign up form-->
+
+      <form method="get" id="signupform">
+     <div class="modal" id="signupModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     < div class="modal-dialog" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Sign up today and Start you Online Notes App!</h4>
+      </div>
+      <div class="modal-body">
+<!--          sign up message from php file-->
+          <div id="signupmessage"></div>
+        <div class="form-group">
+            <label for="username" class="sr-only">Username:</label>
+            <input class="form-control" type="text" name="username" id="username" placeholder="Username" maxlength="30">
+          </div>
+           <div class="form-group">
+            <label for="email" class="sr-only">email:</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="Email Address" maxlength="50">
+          </div>
+           <div class="form-group">
+            <label for="password" class="sr-only">password:</label>
+            <input class="form-control" type="password" name="password" id="password" placeholder="Choose a password" maxlength="30">
+          </div>
+           <div class="form-group">
+            <label for="password" class="sr-only">confirm password:</label>
+            <input class="form-control" type="password" name="password2" id="password2" placeholder="Confirm password" maxlength="30">
+          </div>
+          </div>
+      <div class="modal-footer">
+          <input class="btn brown" name="signup" type="submit" value="Sign up">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+     
+      </form>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+<!--      footer-->
+      <div class="footer">
+          <div class="container">
+              <p>NAV COPYRIGHT &copy; 2015-2018</p>
+          
+          </div>
+      
+      </div>
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    
